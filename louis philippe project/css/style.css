@@ -22,7 +22,7 @@ body {
 	overflow-x: hidden;
 }
 @font-face {
-    font-family:'soraregular' ;
+    font-family:'sora-regular' ;
     src: url(../fonts/Sora-Regular.ttf);
 } 
 a{
@@ -41,10 +41,6 @@ p{
 	line-height:1.6em;
 	font-size: 18px;
 	color: #000;
-}
-img{
-    width: 100%;
-    display: block;
 }
 h1,h3,h2{
     font-size: 45px;
@@ -211,7 +207,7 @@ main header .middle .left ul li a i{
 }
 #about .maintop .wrapper ul li p { 
     color: #fff;
-    font-size: 20px;    
+    font-size: 16px;    
 }
 
 /* about middle */
@@ -338,6 +334,7 @@ footer .top .right input[type="text"] {
     padding: 1rem 10px;
     border: none;
     border-bottom: 1px solid #d9cfcf;
+    color: #fff;
 }
 footer .top .right input::placeholder{
     color: #d9cfcf;
@@ -360,10 +357,6 @@ footer .top .right div {
     display: flex;
     width: 23rem;
     align-items: center;
-}
-footer .top .right .social div.image a img{
-    width: 100%;
-    display: block;    
 }
 footer .top .right .social div.image a{
     width: 20%;
@@ -414,12 +407,12 @@ footer .bottom .wrapper .footer-bottom-container .right p {
 
 @media all and (max-width:1280px){
     #about .maintop .wrapper ul li p {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 @media all and (max-width:1080px){
     #about .maintop .wrapper ul li p {
-        font-size: 16px;
+        font-size: 13px;
     }
     #spotlight .top .wrapper .container .right .button .one p {
         font-size: 9px;
@@ -433,6 +426,9 @@ footer .bottom .wrapper .footer-bottom-container .right p {
     }
     #about .bottom .wrapper ul li span {
         width: 23%;
+    }
+    footer .top .left ul.one {
+        width: 45%;
     }
 }
 @media all and (max-width:980px){
@@ -489,14 +485,23 @@ footer .bottom .wrapper .footer-bottom-container .right p {
     footer .bottom .wrapper .footer-bottom-container .left {
         font-size: 8px;
     }
-    footer .bottom .wrapper .footer-bottom-container .right p {
+    footer .bottom .wrapper .footer-bottom-container .right p{
         font-size: 8px;
+    }
+    footer .top .right {
+        width: 45%;
+    }
+    footer .top .left ul li {
+        font-size: 9px;
+    }
+    footer .middle h2 {
+        font-size: 17px;
+    }
+    body{
+        width: 103%;
     }
 }
 @media all and (max-width:768px){
-    /* #spotlight .top .wrapper .container .middle {
-        left: 170px;
-    } */
     #spotlight .top .wrapper .container .middle {
         left: 195px;
     }
@@ -521,11 +526,10 @@ footer .bottom .wrapper .footer-bottom-container .right p {
         right: 0px;
     }
     #about .maintop .wrapper ul li {
-        list-style: none;
         width: 17%;
     }
     #about .maintop .wrapper ul li p {
-        font-size: 13px;
+        font-size: 10px;
     }
     #about .middle .wrapper .about-middle-container {
         flex-direction: column;
@@ -535,7 +539,8 @@ footer .bottom .wrapper .footer-bottom-container .right p {
         margin-bottom: 1rem;
     }
     #about .middle .wrapper .about-middle-container .center .bottom-p p {
-        margin-left: 4rem;
+        margin-left: 3rem;
+        font-size: 13px;
     }
     #about .bottom .wrapper ul li {
         width: 35%;
@@ -548,14 +553,17 @@ footer .bottom .wrapper .footer-bottom-container .right p {
         justify-content: space-between;
         margin-bottom: 2rem;
     }
+    footer .top .right {
+        width: 100%;
+    }
     footer .middle h2 {
         font-size: 15px;
     }
     footer .bottom .wrapper .footer-bottom-container .left {
-        font-size: 8px;
+        font-size: 7px;
     }
     footer .bottom .wrapper .footer-bottom-container .right p {
-        font-size: 8px;
+        font-size: 7px;
     }
     #about .bottom .wrapper ul li a h5 {
         font-size: 9px;
@@ -577,6 +585,9 @@ footer .bottom .wrapper .footer-bottom-container .right p {
     #about .maintop .wrapper ul li p {
         font-size: 11px;
     }
+    #about .maintop .wrapper ul li {
+        width: 21%;
+    }
     #about .middle .wrapper .about-middle-container .left{
         width: 10%;
     }
@@ -586,14 +597,10 @@ footer .bottom .wrapper .footer-bottom-container .right p {
     #about .middle .wrapper .about-middle-container .center .bottom-p p {
         margin-left: 3rem;
     }
-    footer .top .left ul li {
-        font-size: 9px;
-    }
     footer .top .left ul li h5 {
         font-size: 10px;
     }
     footer .middle p {
-        color: #fff;
         font-size: 10px;
     }
     footer .bottom .wrapper .footer-bottom-container .right {
@@ -649,7 +656,6 @@ footer .bottom .wrapper .footer-bottom-container .right p {
         margin-top: 1rem;
     }
     #about .bottom .wrapper ul li span {
-        display: inline-block;
         width: 30%;
         height: 45%;
     }
@@ -670,13 +676,19 @@ footer .bottom .wrapper .footer-bottom-container .right p {
         width: 45%;
         top: 65px;
     }
+    footer .top .left ul li a h5 {
+        font-size: 11px;
+    }
+    footer .middle h4 {
+        font-size: 12px;
+    }
 }
 @media all and (max-width:480px){
     body{
         width: 116%;
     }
     #about .maintop .wrapper ul li {
-        width: 20%;
+        width: 23%;
     }
     #about .bottom .wrapper ul li span {
         width: 35%;
